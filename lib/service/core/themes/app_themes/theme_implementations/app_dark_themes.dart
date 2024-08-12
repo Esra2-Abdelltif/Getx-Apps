@@ -5,7 +5,7 @@ class AppDarkTheme {
     return ThemeData.dark().copyWith(
      primaryColor: Colors.blue,
      hintColor: Colors.white,
-      textTheme: const TextTheme(displayMedium:TextStyle(color: Colors.white)),
+      textTheme: const TextTheme(bodyMedium:TextStyle(color: Colors.white)),
 
 
     );

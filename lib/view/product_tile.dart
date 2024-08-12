@@ -35,7 +35,7 @@ class ProductTile extends StatelessWidget {
                     backgroundColor: Colors.white,
                     child: IconButton(
                       icon: product.isFavorite.value
-                          ? const Icon(Icons.favorite_rounded)
+                          ? const Icon(Icons.favorite_rounded,color: Colors.green,)
                           : const Icon(Icons.favorite_border),
                       onPressed: () {
 
@@ -79,7 +79,7 @@ class ProductTile extends StatelessWidget {
               ),
             const SizedBox(height: 8),
             Text('\$${product.price}',
-                style: const TextStyle(fontSize: 32, fontFamily: 'avenir')),
+                style: const TextStyle(fontSize: 24, fontFamily: 'avenir')),
           ],
         ),
       ),

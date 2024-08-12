@@ -66,16 +66,20 @@ class Homepage extends StatelessWidget {
                         child: CircularProgressIndicator(
                         color: Colors.white,
                       ))
-                    : MasonryGridView.count(
-                        crossAxisCount: 3,
-                        itemCount: productController.productList.length,
-                        crossAxisSpacing: 5,
-                        mainAxisSpacing: 16,
-                        itemBuilder: (context, index) {
-                          return ProductTile(
-                              productController.productList[index]);
-                        },
-                        // staggeredTileBuilder: (index) => StaggeredTile.fit(1),
+                    : SingleChildScrollView(
+                        child: MasonryGridView.count(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          crossAxisCount: 3,
+                          itemCount: productController.productList.length,
+                          crossAxisSpacing: 5,
+                          mainAxisSpacing: 16,
+                          itemBuilder: (context, index) {
+                            return ProductTile(
+                                productController.productList[index]);
+                          },
+                          // staggeredTileBuilder: (index) => StaggeredTile.fit(1),
+                        ),
                       );
               }),
             )

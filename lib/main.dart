@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
  return   GetMaterialApp(
       builder: DevicePreview.appBuilder,
-      title: 'Aqua Workout App',
+      title: 'MakeUp App Getx',
       theme:AppThemes.darkTheme,
       debugShowCheckedModeBanner: false,
       defaultTransition: Transition.cupertino,
@@ -32,17 +32,8 @@ class MyApp extends StatelessWidget {
       popGesture: Get.isPopGestureEnable ,
       transitionDuration: const Duration(milliseconds: 230),
        home:    Homepage(),
-
     );
-    // return MaterialApp(
-    //   title: 'Flutter Demo',
-    //   theme: ThemeData(
-    //
-    //     colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-    //     useMaterial3: true,
-    //   ),
-    //   home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    // );
+
   }
 }
 
