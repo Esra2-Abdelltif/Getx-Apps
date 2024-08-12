@@ -31,14 +31,11 @@ class ApiHelperImplementation extends ApiHelper {
     return await requestData(
       call: () async => await dio.get(
         endPoint,
-        queryParameters: query,
-        options: options,
       ),
     );
   }
   _debugPrintData(String endPoint, data, query) {
     dev.log('URL => ${dio.options.baseUrl + endPoint}');
     dev.log('Body => $data');
-    dev.log('Query => $query');
   }
 }

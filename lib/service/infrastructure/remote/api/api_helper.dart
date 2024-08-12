@@ -31,7 +31,7 @@ extension RequestFunction on ApiHelper {
       debugPrint("Response_Type => ${response.data.runtimeType}");
       debugPrint("Response_Code => ${response.statusCode}");
 
-      return response.data;
+      return response;
     } on DioException catch (e) {
       if (e.type == DioExceptionType.sendTimeout ||
           e.type == DioExceptionType.receiveTimeout ||
