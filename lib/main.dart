@@ -2,8 +2,8 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:getx_demo_app/view/homePage.dart';
-import 'service/core/themes/app_themes/app_themes.dart';
+import 'package:getx_demo_app/make_up_shop_app/view/homePage.dart';
+import 'make_up_shop_app/service/core/themes/app_themes/app_themes.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarBrightness: Brightness.dark));

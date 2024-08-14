@@ -1,4 +1,4 @@
-import 'package:getx_demo_app/model/product_model.dart';
+import 'package:getx_demo_app/make_up_shop_app/model/product_model.dart';
 
 import 'core/data/constants/api_constants/end_points.dart';
 import 'package:http/http.dart' as http;

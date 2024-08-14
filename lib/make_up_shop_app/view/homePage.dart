@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:getx_demo_app/controller/controller.dart';
-import 'package:getx_demo_app/view/product_tile.dart';
+import 'package:getx_demo_app/make_up_shop_app/controller/controller.dart';
+import 'package:getx_demo_app/make_up_shop_app/view/product_tile.dart';
 
 class Homepage extends StatelessWidget {
   Homepage({super.key});
