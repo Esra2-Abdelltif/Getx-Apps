@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       opaqueRoute: Get.isOpaqueRouteDefault,
       popGesture: Get.isPopGestureEnable ,
       transitionDuration: const Duration(milliseconds: 230),
-       home:     HomeNewsPage(),
+       home:     const HomeNewsPage(),
     );
 
   }

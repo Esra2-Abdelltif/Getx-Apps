@@ -10,7 +10,8 @@ class HomeNewsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     NewsController controller=Get.put(NewsController());
-    return Scaffold(
+    return GetX<NewsController>(builder: (controller)=> Scaffold(
+        appBar: AppBar(title: const Text("news App"),),
         bottomNavigationBar:BottomNavigationBar(
           selectedItemColor: Colors.red,
           currentIndex: controller.currentIndex.value,
@@ -34,7 +35,7 @@ class HomeNewsPage extends StatelessWidget {
         body: GetX<NewsController>(builder: (controller)=> SharedArticlesScreenWidget(
           categoryType:controller.screens[controller.currentIndex.value],
         ))
-    )
+    ))
     ;
   }
 }
