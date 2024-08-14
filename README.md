@@ -1,4 +1,4 @@
-# workout_fitness_app
+# getx_demo_app
 
 A new Flutter project.
 

@@ -1,4 +1,4 @@
-package com.example.workout_fitness_app
+package com.example.getx_demo_app
 
 import io.flutter.embedding.android.FlutterActivity
 

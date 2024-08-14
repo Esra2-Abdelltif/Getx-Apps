@@ -1,7 +1,7 @@
 //get-state
 import 'package:get/state_manager.dart';
-import 'package:workout_fitness_app/model/product_model.dart';
-import 'package:workout_fitness_app/service/serviceController.dart';
+import 'package:getx_demo_app/model/product_model.dart';
+import 'package:getx_demo_app/service/serviceController.dart';
 
 
 class ProductController extends GetxController {
