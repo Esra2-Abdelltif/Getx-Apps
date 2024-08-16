@@ -26,3 +26,15 @@ Project Demo:
 
 https://github.com/user-attachments/assets/826b59a7-eae7-4a8f-8d1b-4b12e43d8631
 
+
+## ⚡ Simple News App
+
+News App display news of Business news,sports news and science news. I get News API From Internet , that built with Flutter using:
+- Http client for Dart
+- Sate Mangement Getx.
+
+
+Built with Flutter MVC Archiecture:
+
+![image](https://github.com/user-attachments/assets/13483f2d-c70f-4a10-98b9-7b5b4f71e98b)
+
