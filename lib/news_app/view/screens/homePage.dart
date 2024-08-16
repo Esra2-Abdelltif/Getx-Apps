@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_demo_app/news_app/controller/controller.dart';
 import 'package:getx_demo_app/news_app/core/themes/app_themes/app_themes.dart';
+import 'package:getx_demo_app/news_app/core/themes/theme_controller.dart';
 import 'package:getx_demo_app/news_app/view/widget/shared_articles_screen_widget.dart';
 
 class HomeNewsPage extends StatelessWidget {
@@ -13,13 +14,26 @@ class HomeNewsPage extends StatelessWidget {
     NewsController controller=Get.put(NewsController());
     return GetX<NewsController>(builder: (controller)=> Scaffold(
         appBar: AppBar(title: const Text("news App"),
-        actions: [IconButton(onPressed: (){
-          if(Get.isDarkMode){
-            Get.changeTheme(AppThemes.lightTheme);
-          }else{
-            Get.changeTheme(AppThemes.darkTheme);
-          }
-        }, icon: Icon(Icons.dark_mode))],),
+        actions: [
+          GetBuilder<ThemeController>(
+            builder: (controller) {
+              return Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(Icons.light_mode),
+                  Switch(
+                    activeColor: Colors.amber,
+                    value: controller.isDark,
+                    onChanged: (value) {
+                      controller.changeTheme(value);
+                    },
+                  ),
+                  const Icon(Icons.dark_mode),
+                ],
+              );
+            },
+          ),
+        ],),
         bottomNavigationBar:BottomNavigationBar(
           selectedItemColor: Colors.red,
           currentIndex: controller.currentIndex.value,
