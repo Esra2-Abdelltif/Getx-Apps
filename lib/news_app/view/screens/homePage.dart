@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_demo_app/news_app/controller/controller.dart';
-import 'package:getx_demo_app/news_app/core/themes/app_themes/app_themes.dart';
 import 'package:getx_demo_app/news_app/core/themes/theme_controller.dart';
 import 'package:getx_demo_app/news_app/view/widget/shared_articles_screen_widget.dart';
 
