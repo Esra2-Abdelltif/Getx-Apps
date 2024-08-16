@@ -32,9 +32,19 @@ https://github.com/user-attachments/assets/826b59a7-eae7-4a8f-8d1b-4b12e43d8631
 News App display news of Business news,sports news and science news. I get News API From Internet , that built with Flutter using:
 - Http client for Dart
 - Sate Mangement Getx.
+- Using Shared_preferences to cache Theme Data.
+- Using PageStoragekey in ListView.builder to cache current scroll offsets .
 
 
 Built with Flutter MVC Archiecture:
 
-![image](https://github.com/user-attachments/assets/13483f2d-c70f-4a10-98b9-7b5b4f71e98b)
+![image](https://github.com/user-attachments/assets/11cf0e18-ad4d-45a9-ada8-e2eea55c4700)
+
+
+
+Using Flutter Package:
+
+
+![image](https://github.com/user-attachments/assets/bec2ff73-ebec-4ab7-bf17-e1fbbf31e816)
+
 
