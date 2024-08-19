@@ -57,4 +57,35 @@ https://github.com/user-attachments/assets/5457903d-df46-4380-a5a6-3426df9af014
 
 
 
+## ⚡ Note App
+
+Note app is open-source notes app for Android & ios. It is built with Dart on top of Google's Flutter Framework , that built with Flutter using:
+-  Deal with Sqflite
+  [✅] Create Note
+  [✅] Update Note
+  [✅] delete note
+  [✅] delete All note
+  [✅] Search about notes
+  [✅] Last Update of Note
+  [✅] Date Time Created of Note
+- Sate Mangement Getx.
+- Using Shared_preferences to cache Theme Data.
+- Deal with Search Delegate .
+- Deal With Alert Dialog.
+- Content Word Count.
+- Content Char Count.
+
+
+Built with Flutter MVC Archiecture:
+
+![image](https://github.com/user-attachments/assets/9f768e84-224e-49d4-aff6-4c620c13cc36)
+
+
+
+Using Flutter Package:
+
+
+![image](https://github.com/user-attachments/assets/cded8d47-dc76-4ee1-9840-f2964d64ceda)
+
+
 
